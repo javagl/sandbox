@@ -27,6 +27,6 @@ jobs:
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
         git add testPythonOutput.json
-        git commit -m "Updating file list"
+        git diff-index --quiet HEAD || git commit -m "Updating file list"
         git push
 
