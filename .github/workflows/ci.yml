@@ -9,18 +9,24 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - name: Check out repository
+      uses: actions/checkout@v2
 
-    - name: List files in the repository
+    - name: Set up python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Execute python script
       run: |
-        ls ${{ github.workspace }} >> output.txt
+        python testPython.py
 
     - name: Commit list of files back into the repository
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-        git add -A
+        git add testPythonOutput.json
         git commit -m "Updating file list"
         git push
 
