@@ -19,14 +19,14 @@ jobs:
 
     - name: Execute python script
       run: |
-        python testPython.py
+        python generateReadme.py
 
     - name: Commit list of files back into the repository
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-        git add testPythonOutput.json
-        git diff-index --quiet HEAD || git commit -m "Updating file list"
+        git add README_generated.json
+        git diff-index --quiet HEAD || git commit -m "Updating generated README"
         git push
 
