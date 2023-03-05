@@ -1,4 +1,4 @@
 sandbox
 =======
 
-Test repository
+Test repository. Just for testing.
