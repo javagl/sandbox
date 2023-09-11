@@ -4,3 +4,4 @@ Example markdown generated from the directory contents and metadata files
 |-------|:----------:|:--------:|:----:|
 [AnimatedTriangle](AnimatedTriangle) | ![](2.0/AnimatedTriangle/screenshot/screenshot.gif) | glTF<br>glTF-Embedded | Simple<br>Animation | 
 [Triangle](Triangle) | ![](2.0/Triangle/screenshot/screenshot.png) | glTF<br>glTF-Embedded | Simple | 
+[TriangleCopy](TriangleCopy) | ![](2.0/TriangleCopy/screenshot/screenshot.png) | glTF<br>glTF-Embedded | Simple | 
